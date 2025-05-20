@@ -3,8 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
 
-import { Header } from "@/components/header";
 import { ThemeProvider } from "@/providers/theme-provider";
+
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -41,6 +43,7 @@ function RootLayout({ children }: Props) {
                 >
                     <Header />
                     <main className="overflow-hidden">{children}</main>
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>
