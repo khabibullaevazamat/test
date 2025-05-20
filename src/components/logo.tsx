@@ -1,6 +1,6 @@
 import { cn } from "../lib/utils";
 
-export const LogoIcon = ({ className, uniColor }: { className?: string; uniColor?: boolean }) => {
+export function LogoIcon({ className, uniColor }: { className?: string; uniColor?: boolean }) {
     return (
         <svg
             width="18"
@@ -29,4 +29,4 @@ export const LogoIcon = ({ className, uniColor }: { className?: string; uniColor
             </defs>
         </svg>
     );
-};
+}
