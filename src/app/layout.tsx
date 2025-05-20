@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import { Header } from "@/components/header";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -26,10 +27,21 @@ interface Props {
 
 function RootLayout({ children }: Props) {
     return (
-        <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
             <body>
-                <Header />
-                <main className="overflow-hidden">{children}</main>
+                <ThemeProvider
+                    enableSystem
+                    attribute="class"
+                    defaultTheme="system"
+                    disableTransitionOnChange
+                >
+                    <Header />
+                    <main className="overflow-hidden">{children}</main>
+                </ThemeProvider>
             </body>
         </html>
     );
