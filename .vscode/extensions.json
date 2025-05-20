@@ -1,8 +1,8 @@
 {
-  "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "EditorConfig.EditorConfig",
-    "dsznajder.es7-react-js-snippets"
-  ]
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "EditorConfig.EditorConfig",
+        "dsznajder.es7-react-js-snippets"
+    ]
 }
