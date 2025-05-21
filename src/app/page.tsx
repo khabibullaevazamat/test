@@ -2,6 +2,7 @@ import React from "react";
 
 import { HeroSection } from "@/components/hero-section";
 import { Testimonials } from "@/components/testimonials";
+import { Contact } from "@/components/contact";
 
 const testimonials = [
     {
@@ -53,6 +54,7 @@ function Home() {
         <>
             <HeroSection />
             <Testimonials testimonials={testimonials} />
+            <Contact />
         </>
     );
 }
