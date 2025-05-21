@@ -1,6 +1,6 @@
 {
     "name": "test",
-    "version": "0.1.24",
+    "version": "0.1.25",
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
@@ -13,10 +13,11 @@
     "dependencies": {
         "@radix-ui/react-avatar": "^1.1.10",
         "@radix-ui/react-dropdown-menu": "^2.1.14",
-        "@radix-ui/react-slot": "^1.2.2",
+        "@radix-ui/react-slot": "^1.2.3",
         "@tailwindcss/postcss": "^4.1.7",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
+        "embla-carousel-react": "^8.6.0",
         "lucide-react": "^0.511.0",
         "motion": "^12.12.1",
         "next": "15.3.2",
