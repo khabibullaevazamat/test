@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import Autoplay from "embla-carousel-autoplay";
+
 import {
     Carousel,
     CarouselContent,
@@ -58,11 +60,19 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
                 }}
             >
                 <div className="text-center mb-8">
-                    <h2 className="text-4xl font-semibold mb-2">What Our Clients Say</h2>
-                    <p className="text-base">Hear Directly Our Satisfied Partners</p>
+                    <h2 className="text-3xl lg:text-4xl font-semibold mb-2">
+                        What Our Clients Say
+                    </h2>
+                    <p>Hear Directly Our Satisfied Partners</p>
                 </div>
                 <div className="mx-auto lg:max-w-6xl px-3">
-                    <Carousel>
+                    <Carousel
+                        plugins={[
+                            Autoplay({
+                                delay: 3000,
+                            }),
+                        ]}
+                    >
                         <CarouselContent>
                             {testimonials.map((testimonial, index) => (
                                 <CarouselItem
