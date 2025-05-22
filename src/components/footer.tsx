@@ -6,23 +6,19 @@ import { IconInstagram } from "./icons/icon-instagram";
 
 const links = [
     {
-        title: "About",
+        label: "О нас",
         href: "#about",
     },
     {
-        title: "Testimonials",
+        label: "Отзывы",
         href: "#testimonials",
     },
     {
-        title: "Pricing",
+        label: "Прайс лист",
         href: "#pricing",
     },
     {
-        title: "Solution",
-        href: "#",
-    },
-    {
-        title: "Contact",
+        label: "Контакты",
         href: "#contact",
     },
 ];
@@ -41,7 +37,7 @@ export function Footer() {
                             href={link.href}
                             className="text-muted-foreground hover:text-primary block duration-150"
                         >
-                            <span>{link.title}</span>
+                            <span>{link.label}</span>
                         </a>
                     ))}
                 </div>
@@ -50,7 +46,7 @@ export function Footer() {
                         target="_blank"
                         aria-label="Telegram"
                         rel="noopener noreferrer"
-                        href="https://t.me/azamatkhabibullaev"
+                        href="https://t.me/spectresolutions"
                         className="text-muted-foreground hover:text-primary block"
                     >
                         <IconTelegram />
@@ -59,14 +55,14 @@ export function Footer() {
                         target="_blank"
                         aria-label="Instagram"
                         rel="noopener noreferrer"
-                        href="https:instagram.com/azamatcto"
+                        href="https:instagram.com/spectresolutions"
                         className="text-muted-foreground hover:text-primary block"
                     >
                         <IconInstagram />
                     </Link>
                 </div>
                 <span className="text-muted-foreground block text-center text-sm">
-                    &copy; {new Date().getFullYear()} Test, All rights reserved
+                    &copy; {new Date().getFullYear()} Spectre Solutions, Все права защищены
                 </span>
             </div>
         </footer>

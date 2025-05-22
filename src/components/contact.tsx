@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 export function Contact() {
     return (
@@ -44,51 +45,42 @@ export function Contact() {
             <section className="py-16 md:py-24 lg:py-32">
                 <div className="flex flex-col items-center justify-center px-4">
                     <div className="mb-8 text-center">
-                        <h2 className="text-3xl font-bold mb-2">Get in touch</h2>
-                        <p>We&apos;d love to hear from you. Please fill out this form.</p>
+                        <h2 className="text-3xl font-bold mb-2">Свяжитесь с нами</h2>
+                        <p>Оставьте заявку — мы перезвоним в течение рабочего дня.</p>
                     </div>
                     <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
                         <Card className="shadow-none p-0">
                             <CardContent className="p-6 h-full">
                                 <form className="flex flex-col justify-between gap-4 h-full">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div>
-                                            <label className="block text-sm font-medium mb-1">
-                                                First name
-                                            </label>
-                                            <Input placeholder="First name" />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-medium mb-1">
-                                                Last name
-                                            </label>
-                                            <Input placeholder="Last name" />
-                                        </div>
+                                    <div>
+                                        <label className="block text-sm font-medium mb-1">
+                                            Имя
+                                        </label>
+                                        <Input />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium mb-1">
                                             Email
                                         </label>
-                                        <Input placeholder="Email" type="email" />
+                                        <Input type="email" />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium mb-1">
-                                            Phone
+                                            Телефон
                                         </label>
-                                        <Input placeholder="Phone" type="tel" />
+                                        <Input type="tel" />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium mb-1">
-                                            Message
+                                            Описание задачи
                                         </label>
                                         <Textarea
-                                            className="min-h-[120px] md:min-h-[180px] lg:min-h-[220px]"
-                                            placeholder="Your message"
                                             rows={6}
+                                            className="min-h-[120px] md:min-h-[180px] lg:min-h-[220px]"
                                         />
                                     </div>
                                     <Button type="submit" className="w-full mt-2">
-                                        Send message
+                                        Отправить
                                     </Button>
                                 </form>
                             </CardContent>
@@ -114,28 +106,44 @@ export function Contact() {
                                         <div className="flex items-center gap-3">
                                             <MapPin className="w-5 h-5 text-neutral-400" />
                                             <div>
-                                                <span className="font-semibold">Visit us</span>
-                                                <div className="text-sm text-neutral-400">
-                                                    100 Smith Street, Melbourne VIC 3000, Australia
-                                                </div>
+                                                <span className="font-semibold">
+                                                    Приходите к нам
+                                                </span>
+                                                <Link
+                                                    href=""
+                                                    className="block text-sm text-neutral-400"
+                                                >
+                                                    г. Ташкент / Онлайн по всей Узбекистан и СНГ
+                                                </Link>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-3">
                                             <Mail className="w-5 h-5 text-neutral-400" />
                                             <div>
-                                                <span className="font-semibold">Email us</span>
-                                                <div className="text-sm text-neutral-400">
-                                                    hello@example.com
-                                                </div>
+                                                <span className="font-semibold">
+                                                    Электронная почта
+                                                </span>
+                                                <Link
+                                                    target="_blank"
+                                                    aria-label="Instagram"
+                                                    rel="noopener noreferrer"
+                                                    href="https:erkin@gmail.com"
+                                                    className="block text-sm text-neutral-400"
+                                                >
+                                                    erkin@gmail.com
+                                                </Link>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-3">
                                             <Phone className="w-5 h-5 text-neutral-400" />
                                             <div>
-                                                <span className="font-semibold">Call us</span>
-                                                <div className="text-sm text-neutral-400">
-                                                    +1 (234) 567-890
-                                                </div>
+                                                <span className="font-semibold">Позвоните нам</span>
+                                                <Link
+                                                    href="tel:998934914423"
+                                                    className="block text-sm text-neutral-400"
+                                                >
+                                                    +998934914423
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

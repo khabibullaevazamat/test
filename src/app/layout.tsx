@@ -38,7 +38,7 @@ function RootLayout({ children }: Props) {
                 <ThemeProvider
                     enableSystem
                     attribute="class"
-                    defaultTheme="system"
+                    defaultTheme="dark"
                     disableTransitionOnChange
                 >
                     <Header />

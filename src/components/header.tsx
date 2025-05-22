@@ -14,19 +14,19 @@ import { ModeToggle } from "./mode-toggle";
 
 const links = [
     {
-        label: "About",
+        label: "О нас",
         href: "#about",
     },
     {
-        label: "Testimonials",
+        label: "Отзывы",
         href: "#testimonials",
     },
     {
-        label: "Pricing",
+        label: "Прайс лист",
         href: "#pricing",
     },
     {
-        label: "Contact",
+        label: "Контакты",
         href: "#contact",
     },
 ];
@@ -81,7 +81,7 @@ export function Header() {
                         </div>
                         <div className="hidden lg:flex items-center gap-12">
                             <nav>
-                                <ul className="flex items-center gap-4">
+                                <ul className="flex items-center gap-12">
                                     {links.map((link, index) => (
                                         <li key={index}>
                                             <a
@@ -97,7 +97,7 @@ export function Header() {
                             <div className="flex items-center gap-4">
                                 <Button asChild variant="outline">
                                     <Link href="#">
-                                        <span>Get Started</span>
+                                        <span>Начать</span>
                                     </Link>
                                 </Button>
                                 <div className="max-lg:hidden">
@@ -125,7 +125,7 @@ export function Header() {
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 <Button asChild variant="outline">
                                     <Link href="#">
-                                        <span>Get Started</span>
+                                        <span>Начать</span>
                                     </Link>
                                 </Button>
                             </div>

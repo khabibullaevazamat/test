@@ -61,9 +61,9 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
             >
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold mb-2">
-                        What Our Clients Say
+                        Что говорят наши клиенты
                     </h2>
-                    <p>Hear Directly Our Satisfied Partners</p>
+                    <p>Выслушайте непосредственно наших Довольных Партнеров</p>
                 </div>
                 <div className="mx-auto lg:max-w-6xl px-3">
                     <Carousel

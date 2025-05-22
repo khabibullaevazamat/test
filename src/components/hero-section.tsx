@@ -45,7 +45,7 @@ export function HeroSection() {
                             preset="fade-in-blur"
                             className="mt-8 text-balance text-4xl md:text-6xl lg:text-7xl xl:text-[5.25rem] lg:mt-16"
                         >
-                            Modern Solutions for Customer Engagement
+                            Разработка IT-решений под ваш бизнес
                         </TextEffect>
                         <TextEffect
                             as="p"
@@ -55,8 +55,8 @@ export function HeroSection() {
                             preset="fade-in-blur"
                             className="mx-auto mt-8 max-w-2xl text-balance text-md md:text-lg"
                         >
-                            Highly customizable components for building modern websites and
-                            applications that look and feel the way you mean it.
+                            Автоматизируйте процессы, экономьте время и растите быстрее — мы
+                            создадим программный продукт, который решает ваши задачи.
                         </TextEffect>
                         <AnimatedGroup
                             variants={{
@@ -78,7 +78,7 @@ export function HeroSection() {
                             >
                                 <Button asChild size="lg" className="rounded-xl px-5 text-base">
                                     <Link href="#link">
-                                        <span className="text-nowrap">Get Started</span>
+                                        <span className="text-nowrap">Начать</span>
                                     </Link>
                                 </Button>
                             </div>
@@ -105,8 +105,8 @@ export function HeroSection() {
                         />
                         <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                             <Image
-                                width="4092"
-                                height="1924"
+                                width="1920"
+                                height="1080"
                                 src={HeroImage}
                                 alt="Exam class"
                                 className="bg-background aspect-15/8 relative rounded-2xl"
