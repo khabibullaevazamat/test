@@ -1,6 +1,6 @@
 {
     "name": "test",
-    "version": "0.1.34",
+    "version": "0.1.35",
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
@@ -8,7 +8,10 @@
         "start": "next start",
         "lint": "next lint",
         "format": "prettier --ignore-unknown --write .",
-        "prepare": "husky"
+        "prepare": "husky",
+        "v:major": "npm version major --no-git-tag-version",
+        "v:minor": "npm version minor --no-git-tag-version",
+        "v:patch": "npm version patch --no-git-tag-version"
     },
     "dependencies": {
         "@hookform/resolvers": "^5.1.1",
