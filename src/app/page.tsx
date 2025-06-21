@@ -1,6 +1,8 @@
 import React from "react";
 
 import { HeroSection } from "@/components/hero-section";
+// import { About } from "@/components/about";
+import { Pricing } from "@/components/pricing";
 import { Testimonials } from "@/components/testimonials";
 import { Contact } from "@/components/contact";
 
@@ -53,7 +55,9 @@ function Home() {
     return (
         <>
             <HeroSection />
+            {/* <About /> */}
             <Testimonials testimonials={testimonials} />
+            <Pricing />
             <Contact />
         </>
     );

@@ -5,8 +5,10 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/providers/theme-provider";
 
+import { Toaster } from "@/components/ui/sonner";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { cn } from "@/lib/utils";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -32,7 +34,7 @@ function RootLayout({ children }: Props) {
         <html
             lang="en"
             suppressHydrationWarning
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            className={cn("scroll-smooth", geistSans.variable, geistMono.variable)}
         >
             <body>
                 <ThemeProvider
@@ -44,6 +46,7 @@ function RootLayout({ children }: Props) {
                     <Header />
                     <main className="overflow-hidden">{children}</main>
                     <Footer />
+                    <Toaster />
                 </ThemeProvider>
             </body>
         </html>
